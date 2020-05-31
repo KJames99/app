@@ -44,7 +44,7 @@ class PostController extends Controller
         ]);
 
         $user_id = auth()->id();
-        $user = User::find(1);
+        $user = User::find($user_id);
         return $user->posts()->create([
             'title'   => $request['title'],
             'content' => $request['content']
