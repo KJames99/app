@@ -173,7 +173,7 @@
                 if(file['size'] < 2111775){ //size < 2mb
                     //Change in base64
                     reader.onloadend = (file) => {
-                        // console.log('RESULT', 'reader.result');
+                        console.log('RESULT', 'reader.result');
                         this.form.photo = reader.result; 
                     }
                     reader.readAsDataURL(file);

@@ -2785,7 +2785,7 @@ __webpack_require__.r(__webpack_exports__);
         //size < 2mb
         //Change in base64
         reader.onloadend = function (file) {
-          // console.log('RESULT', 'reader.result');
+          console.log('RESULT', 'reader.result');
           _this3.form.photo = reader.result;
         };
 
